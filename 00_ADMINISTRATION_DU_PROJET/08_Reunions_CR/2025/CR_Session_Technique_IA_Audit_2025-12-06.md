@@ -106,22 +106,6 @@ Tous les sous-dossiers (datasets, tests, explainability, MLOps, monitoring) ont 
 
 ---
 
-# 📍 Emplacement recommandé dans l’arborescence GitHub
-
-Créer le fichier :
-
-`CR_Session_Technique_IA_Audit_2025-12-06.md`
-
-Et le placer ici :
-
-```
-00._ADMINISTRATION_DU_PROJET/
-└── 08_Reunions_CR/
-    └── 2025/
-```
-
----
-
 # ✔ Fin de session  
 Prochaine étape :  
 - réception des premiers outputs modèles,  
