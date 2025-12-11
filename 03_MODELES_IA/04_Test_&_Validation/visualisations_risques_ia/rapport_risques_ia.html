@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rapport Risques IA - 10/12/2025 19:32</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f8f9fa; }
+        h1, h2 { color: #2c3e50; }
+        .container { max-width: 1400px; margin: auto; }
+        img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 8px; margin: 20px 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        th { background-color: #4a6fa5; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .status-pass { color: green; font-weight: bold; }
+        .status-fail { color: red; font-weight: bold; }
+        .warning { background-color: #fff3cd; border: 1px solid #ffeaa7; padding: 15px; border-radius: 5px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>📊 Rapport de Robustesse et Équité des Modèles IA</h1>
+    <p><strong>Date:</strong> 10/12/2025 19:32</p>
+    <p><strong>Modèles analysés:</strong> XGBoost, Random Forest, SVM, KNN</p>
+    <p><strong>Tests effectués:</strong> Drift, Stress, Fairness, Personas</p>
+    
+    <h2>📋 Données brutes des tests</h2>
+    <table border="1" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Model</th>
+      <th>Test</th>
+      <th>Accuracy</th>
+      <th>AUC</th>
+      <th>F1</th>
+      <th>KS</th>
+      <th>PSI</th>
+      <th>Disparate_Impact</th>
+      <th>Statistical_Parity_Diff</th>
+      <th>Equal_Opportunity_Diff</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KNN</td>
+      <td>Drift</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Random Forest</td>
+      <td>Drift</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>SVM</td>
+      <td>Drift</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>Drift</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>KNN</td>
+      <td>Fairness</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Random Forest</td>
+      <td>Fairness</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>SVM</td>
+      <td>Fairness</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>Fairness</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>KNN</td>
+      <td>Personas</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Random Forest</td>
+      <td>Personas</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>SVM</td>
+      <td>Personas</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>Personas</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>KNN</td>
+      <td>Stress</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>Random Forest</td>
+      <td>Stress</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>SVM</td>
+      <td>Stress</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>XGBoost</td>
+      <td>Stress</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+    
+    <h2>📈 Visualisations</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>📊 Performance globale (Accuracy)</h3>
+            <p>Graphique non disponible</p>
+        </div>
+        
+        <div class="card">
+            <h3>🎯 Score AUC</h3>
+            <p>Graphique non disponible</p>
+        </div>
+        
+        <div class="card">
+            <h3>⚠️ Détection de Drift (KS + PSI)</h3>
+            <img src='png/drift_heatmap.png'>
+        </div>
+        
+        <div class="card">
+            <h3>⚖️ Équité (Fairness)</h3>
+            <iframe src='fairness_radar.html' width='100%' height='500px' frameborder='0'></iframe>
+        </div>
+        
+        <div class="card">
+            <h3>✅ Récapitulatif PASS/FAIL</h3>
+            <img src='png/summary_pass_fail.png'>
+        </div>
+        
+        <div class="card">
+            <h3>📊 Score F1</h3>
+            <p>Graphique non disponible</p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>📝 Résumé des résultats</h2>
+        <table>
+            <tr>
+                <th>Modèle</th>
+                <th>Tests PASS</th>
+                <th>Tests FAIL</th>
+                <th>Taux de réussite</th>
+            </tr>
+
+            <tr>
+                <td><strong>KNN</strong></td>
+                <td class="status-pass">4</td>
+                <td class="status-fail">0</td>
+                <td>100.0%</td>
+            </tr>
+
+            <tr>
+                <td><strong>Random Forest</strong></td>
+                <td class="status-pass">4</td>
+                <td class="status-fail">0</td>
+                <td>100.0%</td>
+            </tr>
+
+            <tr>
+                <td><strong>SVM</strong></td>
+                <td class="status-pass">4</td>
+                <td class="status-fail">0</td>
+                <td>100.0%</td>
+            </tr>
+
+            <tr>
+                <td><strong>XGBoost</strong></td>
+                <td class="status-pass">4</td>
+                <td class="status-fail">0</td>
+                <td>100.0%</td>
+            </tr>
+
+        </table>
+    </div>
+    
+    <div class="warning">
+        <h3>⚠️ Notes techniques</h3>
+        <p><strong>Fichiers générés:</strong> 3 fichiers PNG</p>
+        <p><strong>Statut Kaleido:</strong> Disponible</p>
+        <p><strong>Données chargées:</strong> 16 enregistrements de tests</p>
+    </div>
+    
+    <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; color: #666;">
+        <p>Généré automatiquement par le système de visualisation des risques IA</p>
+        <p>Base de données: /opt/dataiaisystem/risques/results</p>
+    </footer>
+</div>
+</body>
+</html>

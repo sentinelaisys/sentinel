@@ -1,0 +1,38 @@
+{
+  "algorithm": "svm",
+  "mode": "prediction",
+  "dataset": "tests_dataset_fairness.csv",
+  "timestamp": "2025-12-10T01:22:28.274391",
+  "num_samples": 1800,
+  "predictions_count": 1168,
+  "risk_rate": 0.6488888888888888,
+  "risk_distribution": {
+    "faible": 72,
+    "moyen": 484,
+    "élevé": 1244
+  },
+  "features_used": [
+    "age",
+    "capital_assure",
+    "prime_annuelle",
+    "anciennete_contrat",
+    "historique_sinistres",
+    "canal_encoded"
+  ],
+  "model_params": {},
+  "boundary_analysis": {
+    "avg_distance": 0.7915358843893409,
+    "min_distance": 0.00030197769605710967,
+    "max_distance": 2.1939976399233867,
+    "boundary_cases": 125,
+    "boundary_percentage": 0.06944444444444445,
+    "confidence_high": 0.37333333333333335,
+    "confidence_low": 0.32222222222222224
+  },
+  "summary": {
+    "total_clients": 1800,
+    "clients_risque": 1168,
+    "taux_risque": "64.9%",
+    "confiance_moyenne": "75.0%"
+  }
+}

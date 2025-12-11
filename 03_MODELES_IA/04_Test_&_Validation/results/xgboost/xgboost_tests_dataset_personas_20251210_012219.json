@@ -1,0 +1,39 @@
+{
+  "algorithm": "xgboost",
+  "dataset": "tests_dataset_personas.csv",
+  "timestamp": "2025-12-10T01:22:19.721342",
+  "num_samples": 7,
+  "features_used": [
+    "age",
+    "capital_assure",
+    "prime_annuelle",
+    "ratio_prime_capital"
+  ],
+  "model_status": "trained",
+  "predictions_count": 7,
+  "risk_rate": 1.0,
+  "avg_risk_score": 0.7000000000000001,
+  "predictions": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "risk_scores": [
+    0.7,
+    0.7,
+    0.7,
+    0.7,
+    0.7,
+    0.7,
+    0.7
+  ],
+  "metadata": {
+    "scaler_fitted": true,
+    "model_available": true,
+    "sample_count": 7
+  }
+}

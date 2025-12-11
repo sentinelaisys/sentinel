@@ -1,0 +1,10 @@
+{
+  "total": 2000,
+  "risque_elevé": 998,
+  "risque_faible": 1002,
+  "taux_risque": 49.9,
+  "score_moyen": 0.499,
+  "distance_moyenne": 0.5188793073540413,
+  "fichier_entree": "/opt/dataiaisystem/risques/data/tests_dataset_drift.csv",
+  "date_execution": "2025-12-10 01:22:12.836769"
+}

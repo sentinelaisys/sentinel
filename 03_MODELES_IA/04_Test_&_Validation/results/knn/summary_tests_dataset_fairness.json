@@ -1,0 +1,10 @@
+{
+  "total": 1800,
+  "risque_elevé": 324,
+  "risque_faible": 1476,
+  "taux_risque": 18.0,
+  "score_moyen": 0.30541404297598823,
+  "distance_moyenne": 7.659356391368236,
+  "fichier_entree": "/opt/dataiaisystem/risques/data/tests_dataset_fairness.csv",
+  "date_execution": "2025-12-10 01:22:29.696156"
+}

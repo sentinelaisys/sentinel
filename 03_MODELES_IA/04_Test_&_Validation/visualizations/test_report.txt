@@ -1,0 +1,58 @@
+=== RAPPORT D'ANALYSE DES TESTS ===
+
+
+--- DRIFT ---
+
+XGBOOST:
+  Distribution classes: {1: 2000}
+
+RANDOM_FOREST:
+  Distribution classes: {'0': 0, '1': 0}
+
+SVM:
+  Distribution classes: {'0': 0, '1': 0}
+
+KNN:
+  Distribution classes: {'0': 0, '1': 0}
+
+--- FAIRNESS ---
+
+XGBOOST:
+  Distribution classes: {1: 1800}
+
+RANDOM_FOREST:
+  Distribution classes: {'0': 0, '1': 0}
+
+SVM:
+  Distribution classes: {'0': 0, '1': 0}
+
+KNN:
+  Distribution classes: {'0': 0, '1': 0}
+
+--- STRESS ---
+
+XGBOOST:
+  Distribution classes: {1: 1000}
+
+RANDOM_FOREST:
+  Distribution classes: {'0': 0, '1': 0}
+
+SVM:
+  Distribution classes: {'0': 0, '1': 0}
+
+KNN:
+  Distribution classes: {'0': 0, '1': 0}
+
+--- PERSONAS ---
+
+XGBOOST:
+  Distribution classes: {1: 7}
+
+RANDOM_FOREST:
+  Distribution classes: {'0': 0, '1': 0}
+
+SVM:
+  Distribution classes: {'0': 0, '1': 0}
+
+KNN:
+  Distribution classes: {'0': 0, '1': 0}

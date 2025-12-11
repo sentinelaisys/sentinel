@@ -1,0 +1,8 @@
+age,capital_assure,prime_annuelle,anciennete_contrat,historique_sinistres,canal,prediction_risque,probabilite_risque,seuil_confiance
+28,20000,300,0,0,Agence,0,0.5489613425855072,moyen
+63,180000,2100,12,1,Courtier,0,0.4862243583563784,moyen
+41,300000,400,1,0,Online,1,0.8220925284279922,élevé
+52,75000,900,7,4,Agence,1,0.9694979244080945,élevé
+45,100000,1500,3,0,Courtier,0,0.22392651073540965,faible
+24,30000,350,2,1,Online,0,0.5704414839158909,moyen
+91,500000,600,1,0,Agence,1,0.9591851695254424,élevé

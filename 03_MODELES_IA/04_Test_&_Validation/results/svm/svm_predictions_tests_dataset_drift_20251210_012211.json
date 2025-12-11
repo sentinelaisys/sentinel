@@ -1,0 +1,42 @@
+{
+  "algorithm": "svm",
+  "mode": "prediction",
+  "dataset": "tests_dataset_drift.csv",
+  "timestamp": "2025-12-10T01:22:11.422778",
+  "num_samples": 2000,
+  "predictions_count": 1919,
+  "risk_rate": 0.9595,
+  "risk_distribution": {
+    "faible": 0,
+    "moyen": 67,
+    "élevé": 1933
+  },
+  "features_used": [
+    "age",
+    "capital_assure",
+    "prime_annuelle",
+    "anciennete_contrat",
+    "historique_sinistres",
+    "canal_encoded"
+  ],
+  "model_params": {
+    "C": 0.5,
+    "gamma": 0.1,
+    "kernel": "rbf"
+  },
+  "boundary_analysis": {
+    "avg_distance": 1.4312915370100887,
+    "min_distance": 8.512601451515778e-05,
+    "max_distance": 1.9521670233908814,
+    "boundary_cases": 25,
+    "boundary_percentage": 0.0125,
+    "confidence_high": 0.8335,
+    "confidence_low": 0.082
+  },
+  "summary": {
+    "total_clients": 2000,
+    "clients_risque": 1919,
+    "taux_risque": "96.0%",
+    "confiance_moyenne": "92.9%"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "total": 1000,
+  "risque_elevé": 343,
+  "risque_faible": 657,
+  "taux_risque": 34.300000000000004,
+  "score_moyen": 0.38924732319335653,
+  "distance_moyenne": 24.049412814378293,
+  "fichier_entree": "/opt/dataiaisystem/risques/data/tests_dataset_stress.csv",
+  "date_execution": "2025-12-10 01:22:18.421033"
+}

@@ -1,0 +1,90 @@
+{
+  "execution_summary": {
+    "total_runs": 16,
+    "successful": 16,
+    "failed": 0,
+    "total_duration": 30.260136,
+    "timestamp": "2025-12-10T01:22:29.880096"
+  },
+  "by_algorithm": {
+    "xgboost": {
+      "total": 4,
+      "success": 4,
+      "files": [
+        "tests_dataset_personas.csv",
+        "tests_dataset_fairness.csv",
+        "tests_dataset_stress.csv",
+        "tests_dataset_drift.csv"
+      ]
+    },
+    "random_forest": {
+      "total": 4,
+      "success": 4,
+      "files": [
+        "tests_dataset_personas.csv",
+        "tests_dataset_fairness.csv",
+        "tests_dataset_stress.csv",
+        "tests_dataset_drift.csv"
+      ]
+    },
+    "svm": {
+      "total": 4,
+      "success": 4,
+      "files": [
+        "tests_dataset_personas.csv",
+        "tests_dataset_fairness.csv",
+        "tests_dataset_stress.csv",
+        "tests_dataset_drift.csv"
+      ]
+    },
+    "knn": {
+      "total": 4,
+      "success": 4,
+      "files": [
+        "tests_dataset_personas.csv",
+        "tests_dataset_fairness.csv",
+        "tests_dataset_stress.csv",
+        "tests_dataset_drift.csv"
+      ]
+    }
+  },
+  "by_file": {
+    "tests_dataset_personas.csv": {
+      "algorithms_run": 4,
+      "status": {
+        "xgboost": "success",
+        "random_forest": "success",
+        "svm": "success",
+        "knn": "success"
+      }
+    },
+    "tests_dataset_fairness.csv": {
+      "algorithms_run": 4,
+      "status": {
+        "xgboost": "success",
+        "random_forest": "success",
+        "svm": "success",
+        "knn": "success"
+      }
+    },
+    "tests_dataset_stress.csv": {
+      "algorithms_run": 4,
+      "status": {
+        "xgboost": "success",
+        "random_forest": "success",
+        "svm": "success",
+        "knn": "success"
+      }
+    },
+    "tests_dataset_drift.csv": {
+      "algorithms_run": 4,
+      "status": {
+        "xgboost": "success",
+        "random_forest": "success",
+        "svm": "success",
+        "knn": "success"
+      }
+    }
+  },
+  "errors": []
+}

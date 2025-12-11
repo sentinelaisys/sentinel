@@ -1,0 +1,66 @@
+{
+  "algorithm": "random_forest",
+  "file": "tests_dataset_personas.csv",
+  "timestamp": "2025-12-10T01:22:21.182356",
+  "n_samples": 7,
+  "features": [
+    "age",
+    "capital_assure",
+    "anciennete_contrat",
+    "prime_annuelle",
+    "historique_sinistres",
+    "canal_encoded"
+  ],
+  "risk_count": 2,
+  "risk_rate": 0.2857142857142857,
+  "probabilities": [
+    0.12055803310928931,
+    0.010423486946673827,
+    0.04958095577159583,
+    1.0,
+    0.02471509391366395,
+    0.06048213533853249,
+    0.9611118002360218
+  ],
+  "feature_importance": {
+    "importances": [
+      0.15258567263897185,
+      0.24880434531014164,
+      0.004410267542862597,
+      0.010462229613335422,
+      0.5837374848946886,
+      0.0
+    ],
+    "feature_importance_dict": {
+      "age": 0.15258567263897185,
+      "capital_assure": 0.24880434531014164,
+      "anciennete_contrat": 0.004410267542862597,
+      "prime_annuelle": 0.010462229613335422,
+      "historique_sinistres": 0.5837374848946886,
+      "canal_encoded": 0.0
+    },
+    "top_5_indices": [
+      4,
+      1,
+      0,
+      3,
+      2
+    ],
+    "top_5_features": [
+      "historique_sinistres",
+      "capital_assure",
+      "age",
+      "prime_annuelle",
+      "anciennete_contrat"
+    ]
+  },
+  "tree_variance": {
+    "avg_variance": 0.03165025320411828,
+    "n_trees_used": 100,
+    "total_trees": 100
+  },
+  "model_metadata": {
+    "n_estimators": 100,
+    "oob_score": 1.0
+  }
+}
